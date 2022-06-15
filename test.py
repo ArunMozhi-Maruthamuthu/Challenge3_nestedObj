@@ -6,7 +6,7 @@ with open("output_testresult.txt", "w") as external_file:
     #calling function to fetch data for emp_list
     print("Given input object:",emp_list,file=external_file)
     print("========================================================",file=external_file)
-    print("output ",file=external_file)
+    print("output: ",file=external_file)
     #sdel globals()[output]
     value = Nested_Obj_Fetch(emp_list,"location")
     print("value of given key: \"location\" is",value,file=external_file)
@@ -23,26 +23,26 @@ with open("output_testresult.txt", "w") as external_file:
     value = Nested_Obj_Fetch(emp_list,"2")
     print("value of given key \"2\" is:",value,file=external_file)
     
-
+    print("========================================================",file=external_file)
     #testing data 2
     flowers = {"1":{"name":"jasmine","color":"white"},
                 "2":{"name":"rose","color":{"red","yellow","pink"}}}
 
     print("Given input object:",flowers,file=external_file)
     print("========================================================",file=external_file)
-    print("output ",file=external_file)
+    print("output: ",file=external_file)
     
     value = Nested_Obj_Fetch(flowers,"name")
     print("value of given key: \"name\" is",value,file=external_file)
     
     value = Nested_Obj_Fetch(flowers,"color")
     print("value of given key: \"color\" is",value,file=external_file)
-
+    print("========================================================",file=external_file)
     #testing data 3
     wrong_Obj = ["1","2"]
     print("Given input object:",wrong_Obj,file=external_file)
     print("========================================================",file=external_file)
-    print("output ",file=external_file)
+    print("output: ",file=external_file)
 
     value = Nested_Obj_Fetch(wrong_Obj,"name")
     print(value,file=external_file)

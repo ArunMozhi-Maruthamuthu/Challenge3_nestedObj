@@ -8,7 +8,7 @@ def Nested_Obj_Fetch(in_obj, in_key):
     if not isinstance(new_obj,dict):
         return "\"invalid object, provide right input\""
     output = []
-    value = []
+    # function to loop through complete object
     def loop(new_obj,in_key):
         #loop through object if its not reached final key
         if not isinstance(new_obj,str):
